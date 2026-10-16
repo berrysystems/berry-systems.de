@@ -3,30 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Berry Systems – Software, die zu Ihrer Arbeit passt</title>
-<meta name="description" content="Berry Systems entwickelt Android-Apps, Webanwendungen und Automatisierungen für Handwerk, Händler und Mittelstand. Persönlich, praxisnah, aus Wiehl – deutschlandweit.">
-<meta name="theme-color" content="#F7F4EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<title>Berry Systems – Software, die einfach funktioniert</title>
+<meta name="description" content="Berry Systems entwickelt Android-Apps, Web-Anwendungen und KI-Automatisierungen für Handwerk, Händler und Mittelstand. Persönlich, praxisnah, aus Wiehl – deutschlandweit.">
+<meta name="theme-color" content="#08090E">
 <link rel="icon" href="img/berry-systems-logo.png">
+<link rel="preload" href="fonts/bricolage.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="css/site.css">
 <script>document.documentElement.classList.remove("no-js")</script>
 </head>
 <body>
 
-<header class="site-head" id="top">
-  <div class="wrap">
-    <a class="brand" href="./" aria-label="Berry Systems – Startseite">
-      <img src="img/berry-b-180.png" alt="" width="28" height="36">
-      <span>Berry Systems</span>
-    </a>
+<header class="site-head">
+  <div class="bar">
+    <a class="brand" href="./" aria-label="Berry Systems – Startseite"><span class="logo"><img src="img/berry-b-180.png" alt="" width="17" height="22"></span>Berry Systems</a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
     </button>
     <nav class="menu" id="menu">
       <a href="#leistungen">Leistungen</a>
-      <a href="#nagelfest">Nagelfest</a>
-      <a href="#arbeitsweise">Arbeitsweise</a>
+      <a href="#referenz">Referenz</a>
+      <a href="#ablauf">Ablauf</a>
       <a href="#ueber-mich">Über mich</a>
+      <a href="#fragen">Fragen</a>
       <a class="btn small" href="#kontakt">Kontakt</a>
     </nav>
   </div>
@@ -35,229 +33,262 @@
 <main>
 
   <!-- Einstieg -->
-  <section class="hero">
+  <section class="hero" id="top">
+    <div class="glow a" aria-hidden="true"></div>
+    <div class="glow b" aria-hidden="true"></div>
     <div class="wrap">
-      <div>
-        <h1>Software, die zu Ihrer
-          <span class="scribble">Arbeit<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 20 C 60 8, 130 6, 200 12 S 280 22, 296 10"/></svg></span>
-          passt.</h1>
-        <p class="lead">Berry Systems entwickelt Apps, Webanwendungen und Automatisierungen für Handwerk, Händler und
-          Mittelstand – mit einem festen Ansprechpartner, der erst zuhört und dann programmiert.</p>
-        <div class="actions">
-          <a class="btn" href="#kontakt">Vorhaben besprechen <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="btn ghost" href="#nagelfest">Ein Beispiel ansehen</a>
-        </div>
-        <p class="where"><span class="dot" aria-hidden="true"></span>Aus Wiehl im Oberbergischen – für Kunden in ganz Deutschland</p>
+      <div class="tag fade-up">Apps · Web · KI-Automatisierung</div>
+      <h1 class="words" data-words>Software, die <span class="serif grad">einfach</span> funktioniert.</h1>
+      <p class="lead fade-up" style="animation-delay:.55s">Berry Systems entwickelt Android-Apps, Web-Anwendungen und
+        Automatisierungen für Handwerk, Händler und Mittelstand – persönlich, praxisnah und mit Blick fürs Rechtliche.</p>
+      <div class="actions fade-up" style="animation-delay:.7s">
+        <a class="btn" href="#kontakt">Projekt besprechen <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#referenz">Referenz ansehen</a>
       </div>
+      <p class="meta fade-up" style="animation-delay:.85s">Tim Militz · Wiehl im Oberbergischen · für Kunden in ganz Deutschland</p>
 
-      <div class="paper-stack" aria-label="Beispiel: eine Rechnung aus der App Nagelfest mit Musterdaten">
-        <div class="margin-note" aria-hidden="true">
-          echte Rechnung aus Nagelfest – nur mit Musterdaten
-          <svg viewBox="0 0 70 36"><path d="M4 6 C 22 4, 44 12, 60 28 M60 28 l-10 -1 M60 28 l-2 -10"/></svg>
-        </div>
-        <div class="stamp" id="stamp">ausgestellt</div>
-        <div class="invoice" id="invoice">
-          <div class="top">
-            <div>
-              <div class="from">HUFBESCHLAG MUSTERMANN · MUSTERSTADT</div>
-              <div class="title" style="margin-top:10px">Rechnung</div>
-              <div class="no">Nr. 2026-014 · 16.10.2026</div>
+      <div class="stage" id="stage" aria-label="Beispiele: Rechnung aus Nagelfest, App-Startbildschirm und eine automatisierte Anfrage – alles mit Musterdaten">
+        <div class="float f-invoice fade-up" data-depth="14" style="animation-delay:1s">
+          <div class="glass invoice" id="invoice">
+            <div class="top">
+              <div>
+                <div class="from">HUFBESCHLAG MUSTERMANN · MUSTERSTADT</div>
+                <div class="title">Rechnung</div>
+                <div class="no">Nr. 2026-014 · 16.10.2026</div>
+              </div>
+              <svg class="qr" id="qr" viewBox="0 0 25 25" aria-hidden="true"></svg>
             </div>
-            <svg class="qr" id="qr" viewBox="0 0 25 25" aria-hidden="true"></svg>
+            <div class="to">an <strong>Erika Musterfrau</strong>, Musterstadt</div>
+            <div class="row pending"><span>Beschlag rundum<small>Luna · 1 Pferd</small></span><span>95,00 €</span></div>
+            <div class="row pending"><span>Barhufpflege<small>Max · 1 Pferd</small></span><span>38,00 €</span></div>
+            <div class="row pending"><span>Anfahrt<small>pauschal</small></span><span>12,00 €</span></div>
+            <div class="sum"><span>Gesamt</span><span id="sum">0,00 €</span></div>
+            <div class="note">Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</div>
+            <div class="stamp" id="stamp">ausgestellt</div>
           </div>
-          <div class="to">an <strong>Erika Musterfrau</strong>, Musterweg 1, 12345 Musterstadt</div>
-          <div class="row pending"><span>Beschlag rundum<small>Luna · 1 Pferd</small></span><span>95,00 €</span></div>
-          <div class="row pending"><span>Barhufpflege<small>Max · 1 Pferd</small></span><span>38,00 €</span></div>
-          <div class="row pending"><span>Anfahrt<small>pauschal</small></span><span>12,00 €</span></div>
-          <div class="sum"><span>Gesamtbetrag</span><span id="sum">0,00 €</span></div>
-          <div class="note">Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</div>
+          <button class="replay" id="replay" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>
+            noch einmal ausstellen
+          </button>
         </div>
-        <button class="replay" id="replay" type="button">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>
-          noch einmal ausstellen
-        </button>
+
+        <div class="float f-phone fade-up" data-depth="26" style="animation-delay:.9s" aria-hidden="true">
+          <div class="phone">
+            <div class="screen">
+              <div class="appbar"><img src="img/nagelfest-icon.png" alt=""><b>Nagelfest</b></div>
+              <div class="tiles">
+                <div class="tile"><div class="lbl">Offen</div><div class="val">1.284,00 €</div><div class="sub">9 Rechnungen</div></div>
+                <div class="tile warn"><div class="lbl">Überfällig</div><div class="val">145,00 €</div><div class="sub">Erika Musterfrau · seit 3 Tagen</div></div>
+                <div class="tile"><div class="lbl">Fällig diese Woche</div><div class="val">6 Pferde</div><div class="sub">Luna, Max, Sternchen …</div></div>
+              </div>
+              <div class="big"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Leistung sprechen</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="float f-flow fade-up" data-depth="18" style="animation-delay:1.1s" aria-hidden="true">
+          <div class="glass flow" id="flow">
+            <div class="head"><span>Ablauf: Anfrage</span><span class="live">läuft</span></div>
+            <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span>E-Mail kommt an<small>„Termin für zwei Pferde?“</small></span><span class="chk">✓</span></div>
+            <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5z"/></svg></span><span>KI ordnet zu<small>Kunde erkannt · Anfrage: Termin</small></span><span class="chk">✓</span></div>
+            <div class="node ok"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></span><span>Entwurf zur Freigabe<small>Antwort mit Terminvorschlag</small></span><span class="chk">✓</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Laufband: Werkzeuge -->
+  <div class="ticker" aria-label="Eingesetzte Technik">
+    <div class="track">
+      <span>Kotlin</span><span>Jetpack Compose</span><span>Android</span><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Python</span><span>KI-Modelle</span><span>REST &amp; MQTT</span><span>E-Rechnung (ZUGFeRD)</span><span>SQLCipher</span><span>GitHub Actions</span>
+      <span aria-hidden="true">Kotlin</span><span aria-hidden="true">Jetpack Compose</span><span aria-hidden="true">Android</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Python</span><span aria-hidden="true">KI-Modelle</span><span aria-hidden="true">REST &amp; MQTT</span><span aria-hidden="true">E-Rechnung (ZUGFeRD)</span><span aria-hidden="true">SQLCipher</span><span aria-hidden="true">GitHub Actions</span>
+    </div>
+  </div>
+
   <!-- Leistungen -->
   <section id="leistungen">
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Leistungen</div>
-        <h2>Drei Werkzeugkästen, ein Ziel: weniger Papierkram.</h2>
-        <p>Ob eigene App für den Außendienst, Webanwendung fürs Büro oder ein Ablauf, der sich von selbst erledigt –
-          ich baue, was in Ihrem Alltag wirklich gebraucht wird, und nicht mehr.</p>
+      <div class="head-row reveal">
+        <div><div class="tag">Leistungen</div><h2>Was ich für Sie <span class="serif">baue</span>.</h2></div>
+        <p>Keine Software von der Stange, sondern genau das Werkzeug, das in Ihrem Alltag fehlt – und nicht mehr.</p>
       </div>
 
-      <div class="services">
-        <article class="service reveal">
-          <svg class="ico" viewBox="0 0 54 54" aria-hidden="true">
-            <rect x="15" y="4" width="24" height="46" rx="5"/><line x1="23" y1="44" x2="31" y2="44"/>
-            <path class="accent" d="M21 18h12M21 24h8M21 30h10"/>
-          </svg>
-          <h3>Android-Apps</h3>
-          <p>Apps für unterwegs: große Bedienelemente, offline nutzbar, Daten verschlüsselt auf dem Gerät –
-            gemacht für Leute, die mit dem Handy arbeiten und nicht am Schreibtisch sitzen.</p>
-          <ul>
-            <li class="for">Zum Beispiel</li>
-            <li>Erfassen und Abrechnen direkt beim Kunden</li>
-            <li>Spracheingabe statt Tippen</li>
-            <li>Geräte per Bluetooth auslesen</li>
-          </ul>
+      <div class="bento">
+        <article class="card c-android reveal" data-spot>
+          <div class="num"><span>01</span><span>Android</span></div>
+          <h3>Apps für unterwegs</h3>
+          <p>Für Leute, die mit dem Handy arbeiten statt am Schreibtisch: große Bedienelemente, offline nutzbar,
+            Daten verschlüsselt auf dem Gerät.</p>
+<div class="code" aria-hidden="true"><span class="c">// Rechnung ausstellen: alles oder nichts</span>
+<span class="k">db</span>.withTransaction {
+  <span class="k">val</span> nr = nummernkreis.<span class="s">naechste</span>()
+  pdf.<span class="s">erzeugen</span>(rechnung, nr)
+  rechnung.<span class="s">sperren</span>()
+}</div>
         </article>
 
-        <article class="service reveal d1">
-          <svg class="ico" viewBox="0 0 54 54" aria-hidden="true">
-            <rect x="4" y="9" width="46" height="34" rx="4"/><line x1="4" y1="17" x2="50" y2="17"/>
-            <circle cx="9.5" cy="13" r=".8"/><circle cx="13.5" cy="13" r=".8"/>
-            <path class="accent" d="M12 27h14M12 33h22"/><path d="M19 49h16"/>
-          </svg>
-          <h3>Web-Apps &amp; Webseiten</h3>
-          <p>Webanwendungen mit Anmeldung und Datenbank, Kundenportale und schlanke Firmenwebseiten – schnell,
+        <article class="card c-web reveal d1" data-spot>
+          <div class="num"><span>02</span><span>Web</span></div>
+          <h3>Web-Anwendungen &amp; Webseiten</h3>
+          <p>Interne Werkzeuge statt Excel-Listen, Portale für Kunden und Mitarbeiter, schnelle Firmenwebseiten –
             barrierearm und ohne Datenkraken im Hintergrund.</p>
-          <ul>
-            <li class="for">Zum Beispiel</li>
-            <li>Interne Werkzeuge statt Excel-Listen</li>
-            <li>Portale für Kunden und Mitarbeiter</li>
-            <li>Webseiten wie diese – ohne Tracking</li>
-          </ul>
+          <ul><li>Kundenportale</li><li>Interne Tools</li><li>Firmenwebseiten</li><li>Schnittstellen</li></ul>
+          <div class="art ring" aria-hidden="true"></div>
         </article>
 
-        <article class="service reveal d2">
-          <svg class="ico" viewBox="0 0 54 54" aria-hidden="true">
-            <circle cx="15" cy="15" r="7"/><circle cx="39" cy="15" r="7"/><circle cx="27" cy="40" r="7"/>
-            <path d="M21 18l3 15M33 18l-3 15M22 15h10"/>
-            <path class="accent" d="M24 40h6M27 37v6"/>
-          </svg>
+        <article class="card c-ki reveal" data-spot>
+          <div class="num"><span>03</span><span>KI</span></div>
           <h3>KI &amp; Automatisierung</h3>
-          <p>Wiederkehrende Abläufe automatisieren und KI dort einsetzen, wo sie spürbar Zeit spart – mit klaren
-            Grenzen, nachvollziehbar und datenschutzbewusst.</p>
-          <ul>
-            <li class="for">Zum Beispiel</li>
-            <li>E-Mails und Anfragen vorsortieren</li>
-            <li>Shop, Warenwirtschaft und Marktplätze verbinden</li>
-            <li>Assistenten für Angebote und Texte</li>
-          </ul>
+          <p>Anfragen vorsortieren, Shop und Warenwirtschaft verbinden, Texte vorbereiten – dort, wo es spürbar Zeit
+            spart, nachvollziehbar und mit Ihrer Freigabe.</p>
+        </article>
+
+        <article class="card c-small reveal d1" data-spot>
+          <div class="big-ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+          <h3>Datenschutz eingebaut</h3>
+          <p>So wenig Daten wie möglich, Verschlüsselung wo nötig, kein Tracking als Standard.</p>
+        </article>
+
+        <article class="card c-small reveal d2" data-spot>
+          <div class="big-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Rechtlich mitgedacht</h3>
+          <p>GoBD, E-Rechnung und DSGVO berücksichtige ich von Anfang an – nicht erst kurz vor dem Start.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Referenz -->
-  <section class="reference" id="nagelfest">
+  <section id="referenz" style="padding-top:0">
     <div class="wrap">
-      <div class="reveal">
-        <div class="kicker">Aus der Praxis</div>
-        <h2>Nagelfest: Rechnungen direkt im Stall.</h2>
-        <p>Eine Rechnungs-App für Hufbeschlagschmiede – entstanden zusammen mit einem Hufschmied, der sie täglich
-          benutzt. Sie zeigt, wie ich arbeite: nah am Alltag, sorgfältig bei den Details, die man nicht sieht.</p>
-        <ul class="facts">
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><span>Rechnungen nach DIN 5008 mit GiroCode und E-Rechnung (ZUGFeRD, EN 16931)</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><span>Ausgestellte Rechnungen unveränderbar, Korrektur nur per Storno – wie es die GoBD verlangen</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><span>Spracheingabe auf dem Gerät, funktioniert auch ohne Netz im Stall</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg><span>Daten verschlüsselt auf dem Handy – keine Cloud, kein Konto, keine Werbung</span></li>
-        </ul>
-        <div class="numbers">
-          <div><b data-count="0">0</b><span>Tracker oder Werbe-Bibliotheken</span></div>
-          <div><b data-count="238">238</b><span>automatische Tests prüfen jede Änderung</span></div>
-          <div><b data-count="8">8</b><span>Jahre Aufbewahrung, nichts wird je automatisch gelöscht</span></div>
-        </div>
-        <p style="margin-top:32px"><a class="btn" href="nagelfest/">Mehr über Nagelfest <span class="arrow" aria-hidden="true">→</span></a></p>
-      </div>
-
-      <div class="reveal d2" aria-hidden="true">
-        <div class="phone">
-          <div class="screen">
-            <div class="appbar"><img src="img/nagelfest-icon.png" alt=""><b>Nagelfest</b></div>
-            <div class="tiles">
-              <div class="tile"><div class="lbl">Offen</div><div class="val">1.284,00 €</div><div class="sub">9 Rechnungen</div></div>
-              <div class="tile warn"><div class="lbl">Überfällig</div><div class="val">145,00 €</div><div class="sub">Erika Musterfrau · seit 3 Tagen</div></div>
-              <div class="tile"><div class="lbl">Fällig diese Woche</div><div class="val">6 Pferde</div><div class="sub">Luna, Max, Sternchen …</div></div>
+      <div class="case reveal">
+        <div class="case-grid">
+          <div>
+            <div class="tag">Referenz · Nagelfest</div>
+            <h2>Rechnungen <span class="serif grad">direkt</span> im Stall.</h2>
+            <p class="lead">Eine Rechnungs-App für Hufbeschlagschmiede, entstanden zusammen mit einem Hufschmied, der sie
+              täglich nutzt.</p>
+            <div class="pst">
+              <div><b>Ausgangslage</b><span>Leistungen im Stall erfassen – mit Handschuhen, oft ohne Netz.</span></div>
+              <div><b>Lösung</b><span>Offline-App mit großen Knöpfen, Mehrfachauswahl und Spracheingabe.</span></div>
+              <div><b>Ergebnis</b><span>Rechnung direkt nach dem Termin – mit GiroCode und E-Rechnung.</span></div>
             </div>
-            <div class="big"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Leistung sprechen</div>
+            <div class="stats">
+              <div><b data-count="238">238</b><span>automatische Tests prüfen jede Änderung</span></div>
+              <div><b data-count="0">0</b><span>Tracker, Werbung oder Cloud-Konten</span></div>
+              <div><b data-count="8">8</b><span>Jahre Aufbewahrung, nichts wird je automatisch gelöscht</span></div>
+            </div>
+            <div class="chips"><span>DIN 5008</span><span>ZUGFeRD / EN 16931</span><span>GoBD-Sperre</span><span>SQLCipher</span><span>Spracheingabe offline</span></div>
+            <p style="margin:34px 0 0"><a class="btn" href="nagelfest/">Zur App-Seite <span class="arrow" aria-hidden="true">→</span></a></p>
+          </div>
+          <div class="phone-wrap" aria-hidden="true">
+            <div class="phone">
+              <div class="screen">
+                <div class="appbar"><img src="img/nagelfest-icon.png" alt=""><b>Nagelfest</b></div>
+                <div class="tiles">
+                  <div class="tile"><div class="lbl">Leistung erfassen</div><div class="val">Erika Musterfrau</div><div class="sub">Luna, Max · Beschlag rundum</div></div>
+                  <div class="tile"><div class="lbl">Rechnung 2026-014</div><div class="val">145,00 €</div><div class="sub">ausgestellt · GiroCode · E-Rechnung</div></div>
+                  <div class="tile warn"><div class="lbl">Fällig</div><div class="val">Sternchen</div><div class="sub">letzter Beschlag vor 6 Wochen</div></div>
+                </div>
+                <div class="big"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Leistung sprechen</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Arbeitsweise -->
-  <section id="arbeitsweise">
+  <!-- Ablauf -->
+  <section id="ablauf" style="padding-top:0">
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Arbeitsweise</div>
-        <h2>Erst verstehen, dann bauen.</h2>
-        <p>Kein Pflichtenheft mit 80 Seiten. Wir fangen klein an, Sie probieren früh aus, und wir verbessern so lange,
-          bis es im Alltag sitzt.</p>
+      <div class="head-row reveal">
+        <div><div class="tag">Ablauf</div><h2>Erst verstehen, <span class="serif">dann</span> bauen.</h2></div>
+        <p>Kein Pflichtenheft mit 80 Seiten: Wir fangen klein an, Sie probieren früh aus, und wir verbessern, bis es im Alltag sitzt.</p>
       </div>
+      <div class="progress" aria-hidden="true"><i id="progress"></i></div>
       <div class="steps" id="steps">
-        <div class="line"><i></i></div>
-        <div class="step reveal"><div class="num">1</div><div><h3>Zuhören</h3><p>Ich lasse mir zeigen, wie Sie heute arbeiten – vor Ort oder per Videoanruf. Wo hakt es, was kostet Zeit, was darf auf keinen Fall schiefgehen?</p></div></div>
-        <div class="step reveal"><div class="num">2</div><div><h3>Klein anfangen</h3><p>Statt alles auf einmal: zuerst der Teil, der am meisten bringt. Sie bekommen früh etwas zum Anfassen und Ausprobieren.</p></div></div>
-        <div class="step reveal"><div class="num">3</div><div><h3>Gemeinsam schärfen</h3><p>Ihre Rückmeldungen fließen direkt ein. Rechtliche Anforderungen – Rechnungen, Datenschutz, Aufbewahrung – prüfe ich von Anfang an mit.</p></div></div>
-        <div class="step reveal"><div class="num">4</div><div><h3>Dranbleiben</h3><p>Nach dem Start ist vor dem Update: Ich halte Ihre Software aktuell und bleibe Ihr Ansprechpartner – ohne Warteschleife.</p></div></div>
+        <div class="step reveal"><div class="n">1</div><h3>Zuhören</h3><p>Sie zeigen mir, wie Sie heute arbeiten – vor Ort oder per Video. Wo hakt es, was kostet Zeit?</p></div>
+        <div class="step reveal d1"><div class="n">2</div><h3>Klein anfangen</h3><p>Zuerst der Teil, der am meisten bringt. Sie bekommen früh etwas zum Anfassen.</p></div>
+        <div class="step reveal d2"><div class="n">3</div><h3>Gemeinsam schärfen</h3><p>Ihre Rückmeldungen fließen direkt ein. Rechtliches prüfe ich von Anfang an mit.</p></div>
+        <div class="step reveal d3"><div class="n">4</div><h3>Dranbleiben</h3><p>Nach dem Start halte ich Ihre Software aktuell und bleibe Ihr Ansprechpartner.</p></div>
       </div>
     </div>
   </section>
 
   <!-- Über mich -->
-  <section class="about" id="ueber-mich">
-    <div class="wrap">
+  <section id="ueber-mich" style="padding-top:0">
+    <div class="wrap about">
       <div class="reveal">
-        <div class="kicker">Über mich</div>
-        <h2>Ein Entwickler. Ein Ansprechpartner.</h2>
+        <div class="tag">Über mich</div>
+        <p class="quote">Wenn Sie anrufen, sprechen Sie mit dem, der Ihre Software auch schreibt.</p>
+        <div class="who"><div class="av" aria-hidden="true">TM</div><div><b>Tim Militz</b><span>Gründer von Berry Systems, Wiehl</span></div></div>
       </div>
-      <div class="story reveal d1">
-        <p>Ich bin Tim Militz. Berry Systems ist bewusst klein gehalten: Wenn Sie anrufen, sprechen Sie mit dem, der
-          Ihre Software auch schreibt – von der ersten Idee bis zum nächsten Update.</p>
+      <div class="text reveal d1">
+        <p>Berry Systems ist bewusst klein: <strong>ein Entwickler, ein Ansprechpartner, kurze Wege</strong> – von der
+          ersten Idee bis zum nächsten Update.</p>
         <p>Am liebsten arbeite ich nah an der Praxis. Nagelfest ist so entstanden: nicht am Reißbrett, sondern
           gemeinsam mit einem Hufschmied, der mir gezeigt hat, was er zwischen zwei Pferden wirklich braucht – große
-          Knöpfe, keine Anmeldung, und eine Rechnung, die beim Finanzamt standhält.</p>
-        <p>Genau so gehe ich auch an Ihr Vorhaben heran.</p>
-        <div class="signature">Tim Militz</div>
-        <ul class="values">
-          <li><b>Kurze Wege</b><span>Direkter Draht statt Ticketsystem.</span></li>
-          <li><b>Klare Sprache</b><span>Ich erkläre Technik so, dass man sie versteht.</span></li>
-          <li><b>Datenschutz eingebaut</b><span>So wenig Daten wie möglich, so sicher wie nötig.</span></li>
-          <li><b>Rechtlich mitgedacht</b><span>GoBD, E-Rechnung, DSGVO – von Anfang an berücksichtigt.</span></li>
-        </ul>
+          Knöpfe, keine Anmeldung und eine Rechnung, die beim Finanzamt standhält. Genau so gehe ich auch an Ihr
+          Vorhaben heran.</p>
+        <div class="values">
+          <div><b>Kurze Wege</b><span>Direkter Draht statt Ticketsystem.</span></div>
+          <div><b>Klare Sprache</b><span>Technik so erklärt, dass man sie versteht.</span></div>
+          <div><b>Praxis vor Theorie</b><span>Gebaut für den echten Arbeitsalltag.</span></div>
+          <div><b>Sorgfalt</b><span>Automatische Tests und saubere Übergaben.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fragen -->
+  <section id="fragen" style="padding-top:0">
+    <div class="wrap">
+      <div class="head-row reveal"><div><div class="tag">Fragen</div><h2>Gut zu wissen.</h2></div></div>
+      <div class="faq reveal">
+        <details><summary>Arbeiten Sie nur in der Region?<span class="pm" aria-hidden="true">+</span></summary>
+          <p>Nein. Ich sitze in Wiehl im Oberbergischen und arbeite mit Kunden in ganz Deutschland. Die meisten Gespräche
+            laufen per Video; Termine vor Ort sind nach Absprache möglich.</p></details>
+        <details><summary>Ist mein Vorhaben zu klein?<span class="pm" aria-hidden="true">+</span></summary>
+          <p>Wahrscheinlich nicht. Gerade kleine Betriebe profitieren von einem Werkzeug, das genau zu ihren Abläufen passt –
+            Nagelfest ist dafür das beste Beispiel.</p></details>
+        <details><summary>Was passiert nach dem Start?<span class="pm" aria-hidden="true">+</span></summary>
+          <p>Ich halte Ihre Software aktuell, kümmere mich um Sicherheitsupdates und bleibe Ihr Ansprechpartner, wenn sich
+            Anforderungen ändern.</p></details>
+        <details><summary>Wie gehen Sie mit Daten und KI um?<span class="pm" aria-hidden="true">+</span></summary>
+          <p>Datenschutz gehört bei mir zum Entwurf, nicht zum Nachtrag: so wenig Daten wie möglich, Verschlüsselung wo nötig.
+            KI setze ich nur ein, wo sie Ihnen wirklich nutzt – nachvollziehbar und mit Ihrer Freigabe.</p></details>
+        <details><summary>Wie fangen wir an?<span class="pm" aria-hidden="true">+</span></summary>
+          <p>Schreiben Sie mir oder rufen Sie an – ein paar Sätze genügen: was Sie heute machen, was Sie stört und was
+            besser werden soll. Das erste Gespräch ist unverbindlich.</p></details>
       </div>
     </div>
   </section>
 
   <!-- Kontakt -->
-  <section class="contact" id="kontakt">
+  <section id="kontakt" style="padding-top:0">
     <div class="wrap">
-      <div class="reveal">
-        <div class="kicker">Kontakt</div>
-        <h2>Erzählen Sie mir von Ihrem Vorhaben.</h2>
+      <div class="cta reveal">
+        <div class="tag">Kontakt</div>
+        <h2>Lassen Sie uns über Ihr Vorhaben <span class="serif grad">sprechen</span>.</h2>
+        <p>Erzählen Sie mir, was Sie vorhaben – ich melde mich persönlich bei Ihnen.</p>
+        <div class="contact-ways">
+          <a class="btn" href="mailto:developer@berry-systems.de?subject=Anfrage%20%C3%BCber%20berry-systems.de">developer@berry-systems.de <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="tel:+4915678670370">015678 670370</a>
+        </div>
+        <p class="fine">Kein Formular, kein Tracking – einfach E-Mail oder Telefon.</p>
       </div>
-      <div class="ways">
-        <a class="way reveal" href="mailto:developer@berry-systems.de?subject=Anfrage%20%C3%BCber%20berry-systems.de">
-          <small>E-Mail <span class="go" aria-hidden="true">→</span></small>
-          <strong>developer@berry-systems.de</strong>
-        </a>
-        <a class="way reveal d1" href="tel:+4915678670370">
-          <small>Telefon <span class="go" aria-hidden="true">→</span></small>
-          <strong>015678 670370</strong>
-        </a>
-      </div>
-      <p class="fine reveal">Ein paar Sätze genügen: was Sie heute machen, was Sie stört und was besser werden soll.
-        Das erste Gespräch ist unverbindlich.</p>
     </div>
   </section>
 
 </main>
 
 <footer class="site-foot">
+  <div class="huge" aria-hidden="true">berry systems</div>
   <div class="wrap">
     <span>© <span id="year">2026</span> Berry Systems · Tim Militz · Wiehl</span>
-    <nav>
-      <a href="nagelfest/">Nagelfest</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
+    <nav><a href="nagelfest/">Nagelfest</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
   </div>
 </footer>
 
