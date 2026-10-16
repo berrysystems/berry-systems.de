@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagelfest – Rechnungen für Hufschmiede</title>
+<meta name="description" content="Nagelfest: Rechnungs-App für Hufbeschlagschmiede und Hufpfleger. Leistung im Stall erfassen, Rechnung nach DIN 5008 mit GiroCode und E-Rechnung ausstellen. Offline, verschlüsselt, ohne Konto.">
+<link rel="icon" href="../img/nagelfest-icon.png">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  /* Nagelfest-Farben (aus dem App-Design) */
+  .nf { --nf-petrol: #0B4E65; --nf-orange: #F28C38; }
+  .nf-hero { padding: 56px 0 80px; }
+  .nf-hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+  .nf-hero .app { display: flex; align-items: center; gap: 16px; margin-bottom: 26px; }
+  .nf-hero .app img { width: 72px; height: 72px; border-radius: 18px; box-shadow: var(--shadow); }
+  .nf-hero .app span { font: 600 15px var(--sans); color: var(--muted); line-height: 1.3; }
+  .nf-hero .app b { display: block; font-family: var(--serif); font-weight: 400; font-size: 30px; color: var(--ink); }
+  .nf-hero h1 { font-size: clamp(44px, 6.4vw, 76px); }
+  .nf-hero h1 em { color: var(--nf-orange); }
+  .nf-hero .lead { font-size: 21px; color: var(--muted); margin: 24px 0 30px; max-width: 32em; }
+  .soon { display: inline-flex; align-items: center; gap: 10px; border: 2px dashed var(--line); border-radius: 999px; padding: 12px 22px; font-weight: 600; color: var(--muted); }
+  @media (max-width: 900px) { .nf-hero .wrap { grid-template-columns: 1fr; } }
+  .feat { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 760px) { .feat { grid-template-columns: 1fr; } }
+  .feat article { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 26px 20px; border-top: 4px solid var(--nf-petrol); }
+  @media (prefers-color-scheme: dark) { .feat article { border-top-color: #4FA3C0; } }
+  .feat h3 { margin-bottom: 10px; }
+  .feat ul { margin: 0; padding-left: 20px; color: var(--muted); }
+  .feat li { margin: 4px 0; }
+  .privacy { background: var(--paper-2); }
+  .privacy .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 900px) { .privacy .grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .privacy .grid { grid-template-columns: 1fr; } }
+  .privacy .grid div { background: var(--card); border-radius: 14px; padding: 20px; border: 1px solid var(--line); }
+  .privacy b { display: block; font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.1; margin-bottom: 6px; }
+  .privacy span { color: var(--muted); font-size: 16px; }
+  .note-box { border-left: 5px solid var(--nf-orange); background: var(--card); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; max-width: 760px; }
+</style>
+<script>document.documentElement.classList.remove("no-js")</script>
+</head>
+<body class="nf">
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Berry Systems – Startseite"><img src="../img/berry-b-180.png" alt="" width="28" height="36"><span>Berry Systems</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    <nav class="menu" id="menu">
+      <a href="./" aria-current="page">Nagelfest</a><a href="#funktionen">Funktionen</a><a href="datenschutz.html">Datenschutz</a><a class="btn small" href="../#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="nf-hero">
+    <div class="wrap">
+      <div>
+        <div class="app reveal"><img src="../img/nagelfest-icon.png" alt="Nagelfest-Symbol"><span><b>Nagelfest</b>für Android</span></div>
+        <h1 class="reveal d1">Rechnungen <em>direkt</em> im Stall.</h1>
+        <p class="lead reveal d2">Die Rechnungs-App für Hufbeschlagschmiede und Hufpfleger: Leistung erfassen, Rechnung
+          ausstellen, verschicken – mit großen Knöpfen, auch mit Handschuhen, auch per Sprache.</p>
+        <div class="reveal d3"><span class="soon">Bald bei Google Play</span></div>
+      </div>
+      <div class="reveal d2" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <div class="appbar"><img src="../img/nagelfest-icon.png" alt=""><b>Nagelfest</b></div>
+            <div class="tiles">
+              <div class="tile"><div class="lbl">Leistung erfassen</div><div class="val">Erika Musterfrau</div><div class="sub">Luna, Max · Beschlag rundum</div></div>
+              <div class="tile"><div class="lbl">Rechnung 2026-014</div><div class="val">145,00 €</div><div class="sub">ausgestellt · GiroCode · E-Rechnung</div></div>
+              <div class="tile warn"><div class="lbl">Fällig</div><div class="val">Sternchen</div><div class="sub">letzter Beschlag vor 6 Wochen</div></div>
+            </div>
+            <div class="big"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Leistung sprechen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funktionen" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Funktionen</div>
+        <h2>Alles, was zwischen zwei Pferden nötig ist.</h2>
+      </div>
+      <div class="feat">
+        <article class="reveal"><h3>Erfassen</h3><ul>
+          <li>Kunde, Pferde und Leistung mit wenigen Tippern – mehrere Pferde auf einmal</li>
+          <li>Oder einfach sagen: „Musterfrau, Luna, Beschlag rundum“</li>
+          <li>Spracherkennung auf dem Gerät, auch ohne Netz</li>
+          <li>Eigener Leistungskatalog, Preise je Kunde, Anfahrt pauschal oder je Kilometer</li>
+        </ul></article>
+        <article class="reveal d1"><h3>Abrechnen</h3><ul>
+          <li>Sofortrechnung nach dem Termin oder monatliche Sammelrechnung</li>
+          <li>PDF im Geschäftsbrief-Format (DIN 5008) mit GiroCode</li>
+          <li>Zusätzlich als E-Rechnung (ZUGFeRD / Factur-X, EN 16931)</li>
+          <li>Für Kleinunternehmer (§ 19 UStG) und Regelbesteuerung</li>
+        </ul></article>
+        <article class="reveal"><h3>Im Blick behalten</h3><ul>
+          <li>Offene und überfällige Rechnungen, freundliche Zahlungserinnerung</li>
+          <li>Bar oder EC im Stall mit einem Tipp als bezahlt markieren</li>
+          <li>„Fällig“-Liste: welche Pferde wieder dran sind</li>
+          <li>Umsatzübersicht mit Hinweis auf die Kleinunternehmergrenze</li>
+        </ul></article>
+        <article class="reveal d1"><h3>Ordnung fürs Finanzamt</h3><ul>
+          <li>Prüft alle Pflichtangaben vor dem Ausstellen</li>
+          <li>Fortlaufende Nummern, ausgestellte Rechnungen unveränderbar</li>
+          <li>Korrektur nur per Stornorechnung</li>
+          <li>Export für den Steuerberater: alle PDFs plus Rechnungsliste</li>
+        </ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Datenschutz</div>
+        <h2>Ihre Daten bleiben auf Ihrem Handy.</h2>
+      </div>
+      <div class="grid">
+        <div class="reveal"><b>Kein Internet</b><span>Die App hat keine Berechtigung, ins Internet zu gehen.</span></div>
+        <div class="reveal d1"><b>Verschlüsselt</b><span>Datenbank mit SQLCipher, Schlüssel im Android Keystore.</span></div>
+        <div class="reveal d2"><b>Kein Konto</b><span>Keine Anmeldung, keine Cloud, keine Werbung, kein Tracking.</span></div>
+        <div class="reveal d3"><b>Eigene Sicherung</b><span>Mit Ihrem Passwort verschlüsselt, an einem Ort Ihrer Wahl.</span></div>
+      </div>
+      <p style="margin-top:28px" class="reveal"><a href="datenschutz.html">Datenschutzerklärung der App lesen →</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="note-box reveal">
+        <strong>Hinweis:</strong> Nagelfest hilft beim Schreiben ordnungsgemäßer Rechnungen nach deutschem Recht, ersetzt
+        aber keine Steuerberatung. Für die Inhalte Ihrer Rechnungen bleiben Sie selbst verantwortlich.
+        Fragen oder Wünsche? <a href="mailto:developer@berry-systems.de?subject=Nagelfest">developer@berry-systems.de</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>Nagelfest ist eine App von Berry Systems · Tim Militz · Wiehl</span>
+    <nav><a href="../">Berry Systems</a><a href="../impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz der App</a></nav>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz – Nagelfest</title>
+<link rel="icon" href="../img/nagelfest-icon.png">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Berry Systems – Startseite"><img src="../img/berry-b-180.png" alt="" width="28" height="36"><span>Berry Systems</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    <nav class="menu" id="menu">
+      <a href="./">Nagelfest</a><a href="../#leistungen">Leistungen</a><a href="../#ueber-mich">Über mich</a><a class="btn small" href="../#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc"><div class="wrap">
+  <h1>Datenschutzerklärung</h1>
+  <p class="lead">für die Android-App „Nagelfest“ von Berry Systems</p>
+
+  <h2>1. Verantwortlicher und Kontakt</h2>
+  <address>
+    Tim Militz – Berry Systems<br>
+    Siefener Str. 28<br>
+    51674 Wiehl<br>
+    E-Mail: <a href="mailto:developer@berry-systems.de">developer@berry-systems.de</a>
+  </address>
+
+  <h2>2. Das Wichtigste in Kürze</h2>
+  <div class="card">
+    <ul>
+      <li>Nagelfest arbeitet <strong>ausschließlich auf Ihrem Gerät</strong>. Die App hat keine Berechtigung für den
+        Zugriff auf das Internet und schickt keine Daten an uns oder an Dritte.</li>
+      <li>Wir betreiben für die App <strong>keinen Server</strong>, erhalten <strong>keine</strong> Ihrer Daten und
+        können sie deshalb weder einsehen noch auswerten.</li>
+      <li>Die App enthält <strong>keine Werbung, keine Analyse- oder Tracking-Werkzeuge und keine Absturzberichte</strong>
+        von Drittanbietern.</li>
+      <li>Daten verlassen das Gerät nur, wenn <strong>Sie</strong> es auslösen: beim Teilen oder Drucken einer Rechnung,
+        bei der Sicherung in einen von Ihnen gewählten Speicherort und beim Export für Ihre Steuerberatung.</li>
+    </ul>
+  </div>
+
+  <h2>3. Welche Daten die App auf Ihrem Gerät speichert</h2>
+  <p>Sie geben in Nagelfest Daten ein, die für Ihre Rechnungen nötig sind:</p>
+  <ul>
+    <li>Ihre Firmendaten (Name, Anschrift, Kontakt, Steuernummer bzw. USt-IdNr., Bankverbindung, Logo),</li>
+    <li>Daten Ihrer Kundinnen und Kunden (Name, Anschrift, Telefon, E-Mail, Notizen) und ihrer Pferde,</li>
+    <li>erbrachte Leistungen, Preise, Rechnungen, Zahlungen und Versandvermerke.</li>
+  </ul>
+  <p>Diese Daten werden in einer <strong>verschlüsselten Datenbank</strong> (SQLCipher, AES-256) auf dem Gerät
+  gespeichert. Der Schlüssel liegt im geschützten Schlüsselspeicher von Android (Android Keystore). Rechnungen werden
+  zusätzlich als PDF-Dateien im internen, für andere Apps nicht zugänglichen Speicher der App abgelegt.</p>
+  <p><strong>Für die Daten Ihrer Kundinnen und Kunden sind Sie selbst verantwortlich</strong> (Art. 4 Nr. 7 DSGVO) –
+  Sie verarbeiten sie für Ihre Buchhaltung. Wir haben auf diese Daten keinen Zugriff; ein
+  Auftragsverarbeitungsvertrag ist deshalb nicht erforderlich.</p>
+  <p>Rechnungen müssen nach deutschem Recht 8 Jahre aufbewahrt werden (§ 147 AO, § 14b UStG). Die App löscht
+  Rechnungen deshalb nie automatisch. Die automatische Android-Sicherung (Google-Konto) ist für Nagelfest
+  ausgeschaltet.</p>
+
+  <h2>4. Berechtigungen</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Berechtigung</th><th>Wofür</th><th>Wann</th></tr>
+    <tr><td>Mikrofon</td><td>Leistungen per Sprache erfassen („Leistung sprechen“)</td><td>Erst beim ersten Tippen auf das Mikrofon; jederzeit in den Android-Einstellungen widerrufbar</td></tr>
+    <tr><td>Benachrichtigungen</td><td>Hinweis auf überfällige Rechnungen und anstehende Sammelrechnungen</td><td>Erst wenn es unbezahlte Rechnungen gibt, mit Erklärung vorab</td></tr>
+    <tr><td>Hintergrundarbeit, Start nach Neustart, Netzwerkstatus (Android-Bibliothek WorkManager)</td><td>Tägliche Prüfung auf überfällige Rechnungen und tägliche Sicherung</td><td>automatisch; die App nutzt dafür kein Internet</td></tr>
+  </table>
+  </div>
+  <p>Die App liest <strong>nicht</strong> Ihr Adressbuch. Wenn Sie einen Kunden aus Ihren Kontakten übernehmen,
+  wählen Sie im Kontaktwähler von Android einen einzelnen Kontakt aus; nur dieser wird übernommen. Ein Firmenlogo
+  wählen Sie über die Fotoauswahl von Android, ohne dass die App Zugriff auf Ihre Fotos erhält.</p>
+
+  <h2>5. Spracheingabe</h2>
+  <p>Gesprochene Sätze werden von der <strong>Spracherkennung Ihres Android-Geräts</strong> in Text umgewandelt. Die
+  App fordert bevorzugt die Erkennung auf dem Gerät an (offline). Ist auf Ihrem Gerät kein deutsches
+  Offline-Sprachpaket installiert, kann der Spracherkennungsdienst des Geräteherstellers bzw. von Google den Ton zur
+  Erkennung an dessen Server übermitteln; die App weist darauf hin. Dafür gelten die Datenschutzbestimmungen dieses
+  Anbieters (bei Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Nagelfest
+  selbst speichert keine Tonaufnahmen und übermittelt weder Ton noch Text. Der erkannte Text wird nur auf dem Gerät
+  ausgewertet und erst nach Ihrer Bestätigung gespeichert.</p>
+
+  <h2>6. Teilen, Drucken, Zahlungserinnerungen</h2>
+  <p>Wenn Sie eine Rechnung oder Zahlungserinnerung teilen, öffnet die App das Teilen-Menü von Android. Sie wählen
+  selbst, an welche App (z. B. E-Mail, Messenger, Drucken) die Rechnung übergeben wird. Für die weitere Verarbeitung
+  gelten die Bedingungen der gewählten App bzw. ihres Anbieters.</p>
+
+  <h2>7. Sicherung und Export</h2>
+  <p><strong>Sicherung:</strong> Sie wählen selbst einen Speicherort (z. B. einen Ordner auf dem Gerät, einer
+  Speicherkarte oder in einem Cloud-Speicher wie Google Drive, wenn dieser auf dem Gerät eingerichtet ist). Die
+  Sicherungsdatei ist mit Ihrem Sicherungspasswort verschlüsselt (AES-256-GCM). Ohne dieses Passwort kann niemand –
+  auch wir nicht – die Sicherung lesen. Das Passwort wird nicht gespeichert; für die automatische Sicherung wird nur
+  ein daraus abgeleiteter Schlüssel im Android Keystore abgelegt. Für die Speicherung bei einem Cloud-Anbieter gelten
+  dessen Bedingungen.</p>
+  <p><strong>Export für die Steuerberatung:</strong> Die App erstellt auf Ihren Wunsch eine ZIP-Datei mit einer
+  Rechnungsliste und den Rechnungs-PDFs und speichert sie an dem von Ihnen gewählten Ort. Diese Datei ist
+  <strong>nicht</strong> verschlüsselt, weil Ihre Steuerberatung sie öffnen können muss.</p>
+
+  <h2>8. Speicherdauer und Löschung</h2>
+  <p>Alle Daten bleiben auf Ihrem Gerät, bis Sie sie löschen oder die App deinstallieren. Mit der Deinstallation
+  werden alle Daten der App vom Gerät entfernt (Sicherungsdateien an dem von Ihnen gewählten Ort bleiben erhalten und
+  können von Ihnen gelöscht werden). Beachten Sie die gesetzlichen Aufbewahrungsfristen für Rechnungen.</p>
+
+  <h2>9. Bezug über Google Play</h2>
+  <p>Nagelfest wird über Google Play vertrieben. Beim Herunterladen und bei Aktualisierungen verarbeitet Google
+  (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) Daten wie Ihr Google-Konto, Geräte- und
+  Zahlungsinformationen in eigener Verantwortung. Wir erhalten von Google nur zusammengefasste, nicht auf Personen
+  bezogene Statistiken (z. B. Anzahl der Installationen) sowie Absturzberichte, die Android an Google sendet, wenn Sie
+  dies in Ihren Geräteeinstellungen erlaubt haben. Einzelheiten:
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+  <h2>10. Diese Webseite</h2>
+  <p>Für den Besuch dieser Webseite (Bereitstellung über GitHub Pages, keine Cookies, kein Tracking) gilt die <a href="../datenschutz.html">Datenschutzerklärung der Webseite</a>.</p>
+
+  <h2>11. Kontakt per E-Mail</h2>
+  <p>Wenn Sie uns per E-Mail schreiben, verarbeiten wir Ihre Angaben nur, um Ihre Anfrage zu beantworten
+  (Art. 6 Abs. 1 lit. b bzw. f DSGVO), und löschen sie, wenn sie dafür nicht mehr gebraucht werden und keine
+  gesetzlichen Aufbewahrungspflichten bestehen.</p>
+
+  <h2>12. Optionale KI-Auswertung (derzeit nicht enthalten)</h2>
+  <p>Die aktuelle Version enthält keine KI-Auswertung und keine Internetverbindung. Sollte eine solche Funktion später
+  angeboten werden, ist sie standardmäßig ausgeschaltet, wird vor dem Einschalten erklärt, und diese
+  Datenschutzerklärung wird vorher ergänzt.</p>
+
+  <h2>13. Ihre Rechte</h2>
+  <p>Soweit wir personenbezogene Daten von Ihnen verarbeiten (etwa bei einer E-Mail-Anfrage), haben Sie das Recht auf
+  Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
+  Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen
+  (Art. 21). Zu Daten in der App können wir keine Auskunft geben und sie nicht löschen, weil wir sie nicht erhalten –
+  Sie haben auf Ihrem Gerät die vollständige Kontrolle. Sie können sich bei einer Datenschutz-Aufsichtsbehörde
+  beschweren (Art. 77 DSGVO).</p>
+
+  <h2>14. Änderungen</h2>
+  <p>Wir passen diese Erklärung an, wenn sich die App oder diese Webseite ändert. Es gilt die jeweils hier
+  veröffentlichte Fassung.</p>
+  <p>Stand: 16. Oktober 2026</p>
+</div></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Berry Systems · Tim Militz · Wiehl</span>
+    <nav><a href="./">Nagelfest</a><a href="../impressum.html">Impressum</a><a href="datenschutz.html" aria-current="page">Datenschutz der App</a></nav>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>
