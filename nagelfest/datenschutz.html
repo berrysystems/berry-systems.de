@@ -50,7 +50,8 @@
   <ul>
     <li>Ihre Firmendaten (Name, Anschrift, Kontakt, Steuernummer bzw. USt-IdNr., Bankverbindung, Logo),</li>
     <li>Daten Ihrer Kundinnen und Kunden (Name, Anschrift, Telefon, E-Mail, Notizen) und ihrer Pferde,</li>
-    <li>erbrachte Leistungen, Preise, Rechnungen, Zahlungen und Versandvermerke.</li>
+    <li>erbrachte Leistungen, Preise, Rechnungen, Zahlungen und Versandvermerke,</li>
+    <li>geplante Termine (Datum, Uhrzeit, Ort, Kunden, Pferde, Notizen, Vermerk über verschickte Bestätigungen).</li>
   </ul>
   <p>Diese Daten werden in einer <strong>verschlüsselten Datenbank</strong> (SQLCipher, AES-256) auf dem Gerät
   gespeichert. Der Schlüssel liegt im geschützten Schlüsselspeicher von Android (Android Keystore). Rechnungen werden
@@ -67,7 +68,7 @@
   <table>
     <tr><th>Berechtigung</th><th>Wofür</th><th>Wann</th></tr>
     <tr><td>Mikrofon</td><td>Leistungen per Sprache erfassen („Leistung sprechen“)</td><td>Erst beim ersten Tippen auf das Mikrofon; jederzeit in den Android-Einstellungen widerrufbar</td></tr>
-    <tr><td>Benachrichtigungen</td><td>Hinweis auf überfällige Rechnungen und anstehende Sammelrechnungen</td><td>Erst wenn es unbezahlte Rechnungen gibt, mit Erklärung vorab</td></tr>
+    <tr><td>Benachrichtigungen</td><td>Hinweis auf überfällige Rechnungen und anstehende Sammelrechnungen; am Vorabend Erinnerung an die Termine des nächsten Tages</td><td>Erst wenn es unbezahlte Rechnungen oder geplante Termine gibt, mit Erklärung vorab</td></tr>
     <tr><td>Hintergrundarbeit, Start nach Neustart, Netzwerkstatus (Android-Bibliothek WorkManager)</td><td>Tägliche Prüfung auf überfällige Rechnungen und tägliche Sicherung</td><td>automatisch; die App nutzt dafür kein Internet</td></tr>
   </table>
   </div>
@@ -88,6 +89,12 @@
   <p>Wenn Sie eine Rechnung oder Zahlungserinnerung teilen, öffnet die App das Teilen-Menü von Android. Sie wählen
   selbst, an welche App (z. B. E-Mail, Messenger, Drucken) die Rechnung übergeben wird. Für die weitere Verarbeitung
   gelten die Bedingungen der gewählten App bzw. ihres Anbieters.</p>
+  <p>Dasselbe gilt für Termine: Eine Terminbestätigung geht nur über das Teilen-Menü an die von Ihnen gewählte App.
+  „In Google-Kalender eintragen“ öffnet den Eingabedialog Ihrer Kalender-App mit dem Termin (Uhrzeit, Ort, Kunden,
+  Pferde); gespeichert wird erst, wenn Sie dort bestätigen. Nagelfest hat keine Berechtigung, Ihren Kalender zu lesen
+  oder zu ändern. „Route“ und „Navigation“ öffnen Google Maps (bzw. den Browser) mit den Anschriften der Termine.
+  Für die weitere Verarbeitung gelten die Bedingungen der jeweiligen App bzw. ihres Anbieters (bei Google:
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).</p>
 
   <h2>7. Sicherung und Export</h2>
   <p><strong>Sicherung:</strong> Sie wählen selbst einen Speicherort (z. B. einen Ordner auf dem Gerät, einer
@@ -137,7 +144,7 @@
   <h2>14. Änderungen</h2>
   <p>Wir passen diese Erklärung an, wenn sich die App oder diese Webseite ändert. Es gilt die jeweils hier
   veröffentlichte Fassung.</p>
-  <p>Stand: 16. Oktober 2026</p>
+  <p>Stand: 22. Oktober 2026</p>
 </div></main>
 
 <footer class="site-foot">
