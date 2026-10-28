@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /fonts/
+
+Sitemap: https://berry-systems.de/sitemap.xml
