@@ -22,7 +22,7 @@
 
 <main class="doc"><div class="wrap">
   <h1>Datenschutzerklärung für die App REPS</h1>
-  <p>Stand: 05.11.2026 · Version 1</p>
+  <p>Stand: 08.11.2026 · Version 2</p>
   <p>REPS ist ein Trainingstagebuch. Die App funktioniert zuerst auf deinem Gerät: Was du erfasst, wird in einer Datenbank auf deinem Handy gespeichert und – wenn du ein Konto nutzt – mit unserem Server abgeglichen. Es gibt <strong>keine Werbung, kein Tracking, keine Analyse-Werkzeuge</strong> und wir verkaufen keine Daten.</p>
   <h2>1. Verantwortlicher</h2>
   <p>Tim Militz, Berry Systems, Siefener Str. 28, 51674 Wiehl, Deutschland<br>
@@ -65,7 +65,9 @@
   <h2>7. Kamera und Texterkennung („Gerät per Foto“)</h2>
   <p>Wenn du ein Gerät per Foto suchst, öffnet REPS die Kamera-App deines Handys oder die Fotoauswahl. Die App selbst hat keine Kamera- und keine Speicherberechtigung. Den Text auf dem Foto liest die Bibliothek <strong>Google ML Kit</strong> direkt auf deinem Gerät; das Foto und der erkannte Text verlassen das Gerät nicht, das Foto wird danach verworfen. Die Nutzungsstatistik, die ML Kit an Google senden würde, haben wir abgeschaltet.</p>
   <h2>8. Benachrichtigungen</h2>
-  <p>Erinnerungen (Supplemente, Training, Pausenende, Verabredungen) erzeugt die App <strong>lokal</strong> auf deinem Gerät. Wir nutzen keinen Push-Dienst eines Dritten. Du kannst Benachrichtigungen in den Android-Einstellungen abschalten.</p>
+  <p>Erinnerungen (Supplemente, Training, Pausenende, Verabredungen) erzeugt die App <strong>lokal</strong> auf deinem Gerät. Du kannst Benachrichtigungen in den Android-Einstellungen abschalten.</p>
+  <p><strong>Sofort-Hinweis auf neue Einladungen (nur mit eingeschalteten Freunden):</strong> Damit du eine Einladung zu einer Verabredung gleich erfährst und nicht erst beim Öffnen der App, nutzen wir <strong>Firebase Cloud Messaging</strong> von Google. Beim Einschalten der Freunde-Funktion vergibt Google deinem Gerät eine zufällige Kennung (Push-Token); wir speichern sie zu deinem Konto auf unserem Server. Lädt dich jemand ein, schicken wir über Google nur einen <strong>Weckruf</strong> an dein Gerät: die Art des Ereignisses und die zufällige Kennung des Termins – <strong>keine Namen, keinen Ort, keine Trainings- oder Gesundheitsdaten</strong>. Die Details holt die App danach selbst von unserem Server. Google verarbeitet dabei den Push-Token, eine Kennung der App-Installation und technische Verbindungsdaten (z. B. IP-Adresse).</p>
+  <p><strong>Rechtsgrundlage:</strong> Erfüllung des Vertrags für die von dir eingeschaltete Freunde-Funktion (Art. 6 Abs. 1 lit. b DSGVO); der Zugriff auf dein Gerät dafür ist unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). <strong>Wie lange:</strong> bis du die Freunde-Funktion ausschaltest, dich abmeldest oder dein Konto löschst – dann löschen wir den Push-Token und machen ihn ungültig; Tokens, die die App 60 Tage nicht bestätigt hat, löschen wir automatisch. Ohne eingeschaltete Freunde nutzt die App Firebase nicht.</p>
   <h2>9. Freunde &amp; Verabredungen (freiwillig)</h2>
   <p>Die Funktion ist ausgeschaltet, bis du sie einschaltest.</p>
   <p><strong>Was deine Freunde sehen:</strong> deinen selbst gewählten Anzeigenamen; Verabredungen, zu denen du einlädst oder eingeladen bist (Datum, Uhrzeit, Ort als Freitext, optional der Name eines Trainingsplans, ob abgesagt, wer eingeladen ist); deine Antwort (Ja / Vielleicht / Nein). <strong>Nie</strong> geteilt werden Trainings, Gewichte, Körperwerte, Fotos, Ziele, Supplemente oder Gesundheitsdaten. Es gibt keine Personensuche, keine öffentlichen Profile, keinen Chat und keine Ranglisten.</p>
@@ -79,6 +81,7 @@
   <ul>
     <li><strong>Supabase Inc.</strong> (USA) betreibt für uns Datenbank und Anmeldung in einem Rechenzentrum in der <strong>EU</strong>. Supabase ist unser Auftragsverarbeiter (Art. 28 DSGVO). Weil ein Zugriff aus den USA (z. B. für Support oder Wartung) nicht ausgeschlossen ist, haben wir mit Supabase die <strong>Standardvertragsklauseln</strong> der EU-Kommission vereinbart (Art. 46 Abs. 2 lit. c DSGVO). Unterauftragnehmer: <a href="https://supabase.com/legal/subprocessors">https://supabase.com/legal/subprocessors</a></li>
     <li><strong>STRATO GmbH</strong> (Berlin) versendet als unser Auftragsverarbeiter die E-Mails zur Registrierung und zum Zurücksetzen des Passworts.</li>
+    <li><strong>Google Ireland Limited</strong> (Dublin) übermittelt als unser Auftragsverarbeiter die Sofort-Hinweise auf Einladungen (Firebase Cloud Messaging, siehe Abschnitt 8). Eine Übermittlung an Google LLC in den USA ist möglich; Google ist nach dem <strong>EU-US Data Privacy Framework</strong> zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO), ergänzend gelten Standardvertragsklauseln. Datenverarbeitungsbedingungen: <a href="https://firebase.google.com/terms/data-processing-terms">https://firebase.google.com/terms/data-processing-terms</a></li>
     <li><strong>Google</strong> stellt die App über Google Play bereit; dafür gelten die Datenschutzbestimmungen von Google. Die Schriften der App lädt Android über die Google-Play-Dienste nach; dabei übermittelt die App selbst keine Daten über dich.</li>
   </ul>
   <p>Eine Weitergabe an andere Dritte findet nicht statt, außer wir sind gesetzlich dazu verpflichtet.</p>
