@@ -34,8 +34,11 @@
   <h2>2. Das Wichtigste in Kürze</h2>
   <div class="card-plain">
     <ul>
-      <li>Nagelfest arbeitet <strong>ausschließlich auf Ihrem Gerät</strong>. Die App hat keine Berechtigung für den
-        Zugriff auf das Internet und schickt keine Daten an uns oder an Dritte.</li>
+      <li>Nagelfest arbeitet <strong>auf Ihrem Gerät</strong>. Ihre Rechnungs-, Kunden- und Termindaten verlassen das
+        Gerät nicht und werden weder an uns noch an Dritte geschickt.</li>
+      <li>Die App nutzt das Internet <strong>nur für Käufe über Google Play</strong> (Nagelfest Pro): Die
+        Abrechnungs-Bibliothek von Google fragt beim Play Store ab, ob ein Kauf besteht. Dabei werden keine Rechnungs-
+        oder Kundendaten übertragen (Abschnitt 10).</li>
       <li>Wir betreiben für die App <strong>keinen Server</strong>, erhalten <strong>keine</strong> Ihrer Daten und
         können sie deshalb weder einsehen noch auswerten.</li>
       <li>Die App enthält <strong>keine Werbung, keine Analyse- oder Tracking-Werkzeuge und keine Absturzberichte</strong>
@@ -70,6 +73,7 @@
     <tr><td>Mikrofon</td><td>Leistungen per Sprache erfassen („Leistung sprechen“)</td><td>Erst beim ersten Tippen auf das Mikrofon; jederzeit in den Android-Einstellungen widerrufbar</td></tr>
     <tr><td>Benachrichtigungen</td><td>Hinweis auf überfällige Rechnungen und anstehende Sammelrechnungen; am Vorabend Erinnerung an die Termine des nächsten Tages</td><td>Erst wenn es unbezahlte Rechnungen oder geplante Termine gibt, mit Erklärung vorab</td></tr>
     <tr><td>Hintergrundarbeit, Start nach Neustart, Netzwerkstatus (Android-Bibliothek WorkManager)</td><td>Tägliche Prüfung auf überfällige Rechnungen und tägliche Sicherung</td><td>automatisch; die App nutzt dafür kein Internet</td></tr>
+    <tr><td>Internet, Netzwerkstatus, Abrechnung über Google Play (Google Play Billing Library)</td><td>Nagelfest Pro kaufen, Käufe wiederherstellen und prüfen, ob ein Kauf besteht</td><td>automatisch; ausschließlich für die Verbindung zum Play Store. Eigene Internetverbindungen baut Nagelfest nicht auf</td></tr>
   </table>
   </div>
   <p>Die App liest <strong>nicht</strong> Ihr Adressbuch. Wenn Sie einen Kunden aus Ihren Kontakten übernehmen,
@@ -120,20 +124,40 @@
   dies in Ihren Geräteeinstellungen erlaubt haben. Einzelheiten:
   <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
 
-  <h2>10. Diese Webseite</h2>
+  <h2>10. Käufe über Google Play (Nagelfest Pro)</h2>
+  <p>Nagelfest ist kostenlos nutzbar; mit „Nagelfest Pro“ (Abo oder Einmalkauf) entfällt die Begrenzung auf fünf neue
+  Rechnungen je Kalendermonat. Kauf, Zahlung, Beleg, Kündigung, Widerruf und Erstattung laufen vollständig über
+  <strong>Google Play</strong>. Vertragspartner für den Kauf und Verantwortlicher für die Zahlungsdaten ist Google
+  (im Europäischen Wirtschaftsraum: Google Commerce Limited bzw. Google Ireland Limited, Gordon House, Barrow Street,
+  Dublin 4, Irland). Wir erhalten <strong>keine Zahlungsdaten</strong> (keine Karten- oder Kontonummer) und aus dem
+  Kauf weder Ihren Namen noch Ihre Anschrift.</p>
+  <p>Damit die App weiß, ob Pro freigeschaltet ist, erhält sie über die Abrechnungs-Bibliothek von Google
+  (Google Play Billing Library) vom Play Store auf Ihrem Gerät: die Produktkennung, eine Kaufkennung (Kauf-Token),
+  die Bestellnummer, den Kaufzeitpunkt, den Kaufstatus und ob sich ein Abo automatisch verlängert. Diese Angaben
+  werden <strong>nur auf Ihrem Gerät</strong> gespeichert, damit die App auch ohne Internet weiterläuft; wir betreiben
+  dafür keinen Server und erhalten diese Angaben nicht. Für die Verbindung zum Play Store nutzt die Bibliothek das
+  Internet; Rechnungs-, Kunden- oder Termindaten werden dabei nicht übertragen.</p>
+  <p>Von Google erhalten wir als Anbieter in der Play Console Abrechnungsberichte (z. B. Bestellnummer, Produkt,
+  Betrag, Land, Zeitpunkt, Erstattungen), die wir für Buchhaltung und Steuern verwenden und nach den gesetzlichen
+  Fristen aufbewahren (Art. 6 Abs. 1 lit. b und c DSGVO, § 147 AO). Wenn Sie uns wegen eines Kaufs schreiben und Ihre
+  Bestellnummer nennen, können wir den Kauf zuordnen. Für die Verarbeitung durch Google gilt dessen
+  Datenschutzerklärung: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+  <h2>11. Diese Webseite</h2>
   <p>Für den Besuch dieser Webseite (Bereitstellung über GitHub Pages, keine Cookies, kein Tracking) gilt die <a href="../datenschutz.html">Datenschutzerklärung der Webseite</a>.</p>
 
-  <h2>11. Kontakt per E-Mail</h2>
+  <h2>12. Kontakt per E-Mail</h2>
   <p>Wenn Sie uns per E-Mail schreiben, verarbeiten wir Ihre Angaben nur, um Ihre Anfrage zu beantworten
   (Art. 6 Abs. 1 lit. b bzw. f DSGVO), und löschen sie, wenn sie dafür nicht mehr gebraucht werden und keine
   gesetzlichen Aufbewahrungspflichten bestehen.</p>
 
-  <h2>12. Optionale KI-Auswertung (derzeit nicht enthalten)</h2>
-  <p>Die aktuelle Version enthält keine KI-Auswertung und keine Internetverbindung. Sollte eine solche Funktion später
+  <h2>13. Optionale KI-Auswertung (derzeit nicht enthalten)</h2>
+  <p>Die aktuelle Version enthält keine KI-Auswertung; das Internet nutzt sie nur für Käufe über Google Play
+  (Abschnitt 10). Sollte eine solche Funktion später
   angeboten werden, ist sie standardmäßig ausgeschaltet, wird vor dem Einschalten erklärt, und diese
   Datenschutzerklärung wird vorher ergänzt.</p>
 
-  <h2>13. Ihre Rechte</h2>
+  <h2>14. Ihre Rechte</h2>
   <p>Soweit wir personenbezogene Daten von Ihnen verarbeiten (etwa bei einer E-Mail-Anfrage), haben Sie das Recht auf
   Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
   Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen
@@ -141,10 +165,10 @@
   Sie haben auf Ihrem Gerät die vollständige Kontrolle. Sie können sich bei einer Datenschutz-Aufsichtsbehörde
   beschweren (Art. 77 DSGVO).</p>
 
-  <h2>14. Änderungen</h2>
+  <h2>15. Änderungen</h2>
   <p>Wir passen diese Erklärung an, wenn sich die App oder diese Webseite ändert. Es gilt die jeweils hier
   veröffentlichte Fassung.</p>
-  <p>Stand: 22. Oktober 2026</p>
+  <p>Stand: 14. November 2026 (gilt ab der App-Version mit Nagelfest Pro)</p>
 </div></main>
 
 <footer class="site-foot">
