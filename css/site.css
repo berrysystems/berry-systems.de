@@ -93,6 +93,8 @@ section { padding: 100px 0; border-top: 1px solid var(--line); }
 /* Warum */
 .why { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; }
 @media (max-width: 900px) { .why { grid-template-columns: 1fr; gap: 36px; } }
+/* Ohne Foto: Text allein, linksbuendig wie die anderen Abschnitte */
+.why.solo { grid-template-columns: 1fr; }
 .photo-slot { aspect-ratio: 4 / 5; border: 1px dashed #3A3B42; border-radius: 6px; display: grid; place-items: center; color: var(--muted); font-size: 15px; background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255, 255, 255, .02) 14px 15px); }
 .why .text h2 { margin-bottom: 28px; }
 .why .text p { color: var(--soft); font-size: 20px; max-width: 32em; }
